@@ -20,7 +20,26 @@ class Home extends StatelessWidget {
           ],
         ),
       ),
-      body: const Text("Container"),
+      body: Center(
+        child: Column(
+          children: <Widget>[
+            Image.asset("img/user.png"),
+            Padding(
+              padding: EdgeInsets.all(16),
+              child: Text("Jhon Doe",
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top:0),
+              child: Text("San Francisco, CA"),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
